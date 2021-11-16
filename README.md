@@ -1,6 +1,6 @@
 # Node JS Weather Application
 Based on Andrew Mead's Node JS course.
-The weather application can be visited over [here](selwynang-weather-application.herokuapp.com).
+The weather application can be visited over [here](https://selwynang-weather-application.herokuapp.com).
 
 Tools and technologies utilised in this application:
 1. Handlebars to create boilerplates for HTML files
