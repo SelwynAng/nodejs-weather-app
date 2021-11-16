@@ -6,6 +6,6 @@ Tools and technologies utilised in this application:
 1. Handlebars to create boilerplates for HTML files
 2. Express JS NPM module to set up the web server of this application
 3. Node JS as the runtime environment
-4. Heroku for deployment of the app
+4. Heroku for deployment of the application
 5. Mapbox API to convert user location input into latitude and longitude data
 6. Weather Stack API to fetch real-time weather data based on data stated in point 5
