@@ -13,7 +13,7 @@ weatherForm.addEventListener('submit', (e) => { //Dictates what event happens on
     messageTwo.textContent = ''; 
 
     //Fetching data from backend NodeJS to show up in the frontend client side Javascript
-    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    fetch('/weather?address=' + location).then((response) => {
         response.json().then((data) => { //Parsing the response which comes back in a JSON format
             if (data.error) {
                 messageOne.textContent = data.error;

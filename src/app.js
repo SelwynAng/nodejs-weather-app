@@ -8,6 +8,9 @@ const geoCoding = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
 const app = express(); //Express itself is a function which we initialise to a variable which we name 'app'
+const port = process.env.PORT || 3000;
+//Setting up a port variable which takes in the dynamic port value which Heroku provides. The port variable takes
+//in a default value of 3000 too, so that our app can run on our local machine without any issues.
 
 
 /*Configuring paths for Express*/
@@ -118,7 +121,7 @@ app.get('*', (req, res) => {
 
 
 /*Final step to setup the web server*/
-app.listen(3000, () => {
-    console.log('Server is up and running!');
+app.listen(port, () => {
+    console.log('Server is up and running on port ' + port + '!');
 })
 //"On" the web server and allows it to run
