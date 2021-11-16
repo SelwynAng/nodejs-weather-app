@@ -1,0 +1,3 @@
+node_modules/
+#We do not need to track the node modules folder as those NPM modules in it can be installed elsewhere
+#Hence, we exclude node modules folder by including it in the .gitignore file to tell git to ignore that folder!

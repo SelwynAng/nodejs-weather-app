@@ -1,0 +1,8 @@
+<footer>
+    <p class = 'footer'>Created by {{name}}. Based on Andrew Mead's NodeJS course. Last updated on {{period}}.</p>
+</footer>
+
+<!--HTML in partial files still can be altered by the CSS file in the public static folder!-->
+<!--1. The request comes in and we compile the handlerbars template to HTML and send that to the client.
+    2. The browser sees the link tag and then sends another request to our server.
+    3. Our express.static() middleware serves the CSS file for that request.-->
