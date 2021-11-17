@@ -67,11 +67,6 @@ app.get('/help', (req, res) => {
     });
 })
 
-app.get('/products', (req, res) => { //For allowing localhost:3000/products to show a normal HTML file
-    res.sendFile(path.join(publicStaticDirectory, 'products.html'));
-})
-
-
 app.get('/weather', (req, res) => {
     //To check if the HTTP request from the client has a query value of 'address'
     if (!req.query.address) {
