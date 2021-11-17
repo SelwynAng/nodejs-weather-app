@@ -10,14 +10,27 @@
         <div class='main-content'>
             {{>header}}
             <div>
-                <p>This is a help page for the Weather App</p>
-                <p>Powered by: {{engine}}</p>
-                <p>******</p>
+                <p style='font-style: oblique; font-size: 18px;'>Just type in a location into the search box and submit it to get live weather data!</p>
+                <p class='error-heading'>Potential errors when fetching data</p>
+                <ul class='error-list'>
+                    <li>
+                        <p>"Unable to find location. Please try again!"</p>
+                        <ul>
+                            <li>Location provided by the user is invalid</li>
+                            <li>Try again by typing in another valid location</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>"Unable to connect to weather services."</p>
+                        <ul>
+                            <li>User's internet connection maybe unstable</li>
+                            <li>Check and retify the connection before trying again</li>
+                        </ul>
+                    </li>
+                </ul>
                 <br>
-                <p>(Insert some form of instructions to operate the application...)</p>
-                <br>
-                <p>******</p>
-                <p>Last updated: {{period}}</p>
+                <p style='font-style: oblique; font-size: 15px;'>Last updated: {{period}}</p>
+                <p style='font-style: oblique; font-size: 15px;'>Powered by: {{engine}}</p>
             </div>
         </div>
         {{>footer}}
