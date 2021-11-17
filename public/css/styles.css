@@ -101,3 +101,11 @@ p.error-heading::before {
 ul.error-list > li > p {
     font-weight: bold;
 }
+
+img.githublogo {
+    width: 40px;
+}
+img.instalogo {
+    margin-bottom: 3px;
+    width: 33px;
+}
