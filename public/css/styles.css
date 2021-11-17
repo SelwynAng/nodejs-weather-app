@@ -83,3 +83,21 @@ button {
     font-family: monospace;
     cursor: pointer;
 }
+
+p.error-heading {
+    font-size: 17px;
+    font-weight: bold;
+    color: crimson;
+}
+p.error-heading::after {
+    content: '\2757';
+    font-size: 25px;
+}
+p.error-heading::before {
+    content: '\1F6A8';
+    font-size: 25px;
+}
+
+ul.error-list > li > p {
+    font-weight: bold;
+}

@@ -2,7 +2,9 @@ const request = require('request');
 
 const geoCoding = (name, callback) => {
     const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/'+ encodeURI(name) + '.json?limit=1&access_token=pk.eyJ1Ijoic2Vsd3luYW5nIiwiYSI6ImNrdnQ0eXFvOTJ0Z3oycm91a2UyMWxwc3IifQ.03kIzGVqpspF6ClGt4FaBg';
-    request({url, json: true}, (error, {body}) => {
+    request({url, json: true}, (error, {body} = {}) => { 
+        //Need to provide a default {} value for destructuring of{body} to prevent app from crashing in case 
+        //the API request cannot work due to reasons like lack of internet connection
         if (error) {
             callback("Unable to connect to geogtagging services.", undefined);
         } else if (body.features.length === 0) {
